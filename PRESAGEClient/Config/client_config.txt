@@ -1,0 +1,10 @@
+#config file for client
+ServerIP=localhost
+ServerPort=7891
+MaxAttempt=100
+Username=user1
+Password=13313
+PrivateKey=018c03d1533457adeaaeb6653b6a861fec879c4311de663bcea1522dbb6ce790
+Parser=0
+
+UploadingQueryFiles=../Config/uploadingFile0.txt

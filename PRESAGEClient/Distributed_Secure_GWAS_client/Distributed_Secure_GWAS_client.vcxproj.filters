@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\PerfectHash">
+      <UniqueIdentifier>{9447c3be-1e25-4df5-a665-efb21384a9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PerfectHash">
+      <UniqueIdentifier>{0fffddf3-a8a9-4042-bade-60c240affedf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Attestation_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ias_ra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ecp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="loadfile_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto_API.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ssl_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="range_code.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="client_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdflib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\FileIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientDataManagement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VCFFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\bdz.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\bdz_ph.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\bmz.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\bmz8.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\brz.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\buffer_entry.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\buffer_manager.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\chd.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\chd_ph.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\chm.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\cmph.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\cmph_structs.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\compressed_rank.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\compressed_seq.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\fch.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\fch_buckets.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\graph.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\hash.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\jenkins_hash.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\miller_rabin.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\select.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\stdafx.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\vqueue.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+    <ClCompile Include="perfectHash\vstack.cpp">
+      <Filter>Source Files\PerfectHash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ias_ra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\remote_attestation_result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto_API.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ssl_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="range_code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdflib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnclaveEM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\FileIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ecp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Attestation_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientDataManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VCFFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bigpoly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="biguint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bdz.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bdz_ph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bdz_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bdz_structs_ph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bitbool.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bmz.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bmz_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bmz8.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\bmz8_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\brz.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\brz_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\buffer_entry.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\buffer_manager.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chd.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chd_ph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chd_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chd_structs_ph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chm.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\chm_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\cmph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\cmph_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\cmph_time.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\cmph_types.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\compressed_rank.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\compressed_seq.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\debug.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\fch.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\fch_buckets.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\fch_structs.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\graph.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\hash.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\hash_state.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\jenkins_hash.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\miller_rabin.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\select.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\select_lookup_tables.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\stdafx.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\targetver.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\vqueue.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="perfectHash\vstack.h">
+      <Filter>Header Files\PerfectHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

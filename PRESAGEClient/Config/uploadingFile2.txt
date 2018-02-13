@@ -1,0 +1,12 @@
+0 
+..\data
+1
+query -c 2 -p 161276680 -r A -a T
+1
+query -c 2 -p 161276680 -r A -a T
+1
+query -c 2 -p 161276680 -r A -a T
+1
+multiquery -c 1,1,1 -p 161276680,161276217,161276672 -r A,G,C -a T,C,T
+1
+multiquery -c 2,2,2 -p 161276680,161276217,161276672 -r A,G,C -a T,C,T

@@ -1,0 +1,44 @@
+enclave {
+	from "sgx_tkey_exchange.edl" import *;
+
+    include "sgx_key_exchange.h"
+    include "sgx_trts.h"
+
+    trusted {
+        /* define ECALLs here. */
+		public sgx_status_t enclave_init_ra(int b_pse,int client_id,
+	                                [out] sgx_ra_context_t *p_context);
+		public sgx_status_t enclave_ra_close(sgx_ra_context_t context);
+		public sgx_status_t verify_att_result_mac(sgx_ra_context_t context,
+                                                  [in,size=message_size] uint8_t* message, 
+                                                  size_t message_size, 
+                                                  [in,size=mac_size] uint8_t* mac, 
+                                                  size_t mac_size);
+
+		public void initializeEnclave(int client_num);
+
+		public void encryptData(sgx_ra_context_t context, 
+				 [in, size = src_len] uint8_t *p_src, uint32_t src_len, 
+				 [out, size = dst_len] uint8_t *p_dst, uint32_t dst_len);
+
+		public void ecall_decryped_seal_buffer(	sgx_ra_context_t context, 
+												int file_type,
+												[out] int *final_sealed_len,
+												[in, size = data_buffer_size]char* data2seal, int data_buffer_size,
+												[out, size = sealed_size]char* sealed_secret, int sealed_size);
+
+		public void implementQuery(sgx_ra_context_t context,
+								[out, size = enc_res_size] uint8_t *enc_res, int enc_res_size,
+								[in, size = enc_data_buffer_size]uint8_t *enc_data, int enc_data_buffer_size);
+
+		public void cleanBuffers();
+    
+    };
+
+    untrusted {
+        /* define OCALLs here. */
+		void ocall_print_string([in, string] const char *str);
+		int ocall_fetch_file(int file_type, int file_num, [out, size = size_to_fetch] uint8_t* fetched_buffers2unseal,
+							   size_t size_to_fetch);
+    };
+};

@@ -1,0 +1,2 @@
+//#define DEB_QUERY_ECNRYPTION
+#define PROFILE_TIME

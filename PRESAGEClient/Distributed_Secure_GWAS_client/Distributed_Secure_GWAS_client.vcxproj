@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DFAB727-D2A2-46B0-8576-BDCEFF1D13E4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Distributed_Secure_GWAS_client</RootNamespace>
+    <ProjectName>GenomeDataOutSourcing_Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>..\ThirdParty\cryptopp562\lib\Win32\DLL_Output\Debug;..\ThirdParty\openssl-0.9.8k\lib\$(Platform);$(LibraryPath)</LibraryPath>
+    <IncludePath>..\Common;..\ThirdParty\cryptopp562\include;..\ThirdParty\openssl-0.9.8k\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\ThirdParty\pthread\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\pthread\lib;..\ThirdParty\openssl-0.9.8k_WIN32\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\Common;..\ThirdParty\cryptopp562\include;..\ThirdParty\openssl-0.9.8k\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\cryptopp562\lib\Win32\DLL_Output\Release;..\ThirdParty\openssl-0.9.8k\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\ThirdParty\sample_libcrypto;..\ThirdParty\openssl-0.9.8k_WIN32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\ThirdParty\sample_libcrypto\win32;..\ThirdParty\openssl-0.9.8k_WIN32\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\ThirdParty\sample_libcrypto\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sample_libcrypto.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\ThirdParty\sample_libcrypto\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sample_libcrypto.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Common.cpp" />
+    <ClCompile Include="..\Common\Config.cpp" />
+    <ClCompile Include="..\Common\FileIO.cpp" />
+    <ClCompile Include="..\Common\Socket.cpp" />
+    <ClCompile Include="Attestation_client.cpp" />
+    <ClCompile Include="cdflib.cpp" />
+    <ClCompile Include="ClientDataManagement.cpp" />
+    <ClCompile Include="crypto_API.cpp" />
+    <ClCompile Include="ecp.cpp" />
+    <ClCompile Include="ias_ra.cpp" />
+    <ClCompile Include="loadfile_client.cpp" />
+    <ClCompile Include="client_main.cpp" />
+    <ClCompile Include="mman.c" />
+    <ClCompile Include="perfectHash\bdz.cpp" />
+    <ClCompile Include="perfectHash\bdz_ph.cpp" />
+    <ClCompile Include="perfectHash\bmz.cpp" />
+    <ClCompile Include="perfectHash\bmz8.cpp" />
+    <ClCompile Include="perfectHash\brz.cpp" />
+    <ClCompile Include="perfectHash\buffer_entry.cpp" />
+    <ClCompile Include="perfectHash\buffer_manager.cpp" />
+    <ClCompile Include="perfectHash\chd.cpp" />
+    <ClCompile Include="perfectHash\chd_ph.cpp" />
+    <ClCompile Include="perfectHash\chm.cpp" />
+    <ClCompile Include="perfectHash\cmph.cpp" />
+    <ClCompile Include="perfectHash\cmph_structs.cpp" />
+    <ClCompile Include="perfectHash\compressed_rank.cpp" />
+    <ClCompile Include="perfectHash\compressed_seq.cpp" />
+    <ClCompile Include="perfectHash\fch.cpp" />
+    <ClCompile Include="perfectHash\fch_buckets.cpp" />
+    <ClCompile Include="perfectHash\graph.cpp" />
+    <ClCompile Include="perfectHash\hash.cpp" />
+    <ClCompile Include="perfectHash\jenkins_hash.cpp" />
+    <ClCompile Include="perfectHash\miller_rabin.cpp" />
+    <ClCompile Include="perfectHash\select.cpp" />
+    <ClCompile Include="perfectHash\stdafx.cpp" />
+    <ClCompile Include="perfectHash\vqueue.cpp" />
+    <ClCompile Include="perfectHash\vstack.cpp" />
+    <ClCompile Include="range_code.cpp" />
+    <ClCompile Include="ssl_client.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VCFFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Array.h" />
+    <ClInclude Include="..\Common\Common.h" />
+    <ClInclude Include="..\Common\Config.h" />
+    <ClInclude Include="..\Common\ecp.h" />
+    <ClInclude Include="..\Common\FileIO.h" />
+    <ClInclude Include="..\Common\remote_attestation_result.h" />
+    <ClInclude Include="..\Common\Socket.h" />
+    <ClInclude Include="..\Common\Utils.h" />
+    <ClInclude Include="Attestation_client.h" />
+    <ClInclude Include="bigpoly.h" />
+    <ClInclude Include="biguint.h" />
+    <ClInclude Include="cdflib.hpp" />
+    <ClInclude Include="ClientDataManagement.h" />
+    <ClInclude Include="crypto_API.h" />
+    <ClInclude Include="Debug.h" />
+    <ClInclude Include="EnclaveEM.h" />
+    <ClInclude Include="ias_ra.h" />
+    <ClInclude Include="mman.h" />
+    <ClInclude Include="perfectHash\bdz.h" />
+    <ClInclude Include="perfectHash\bdz_ph.h" />
+    <ClInclude Include="perfectHash\bdz_structs.h" />
+    <ClInclude Include="perfectHash\bdz_structs_ph.h" />
+    <ClInclude Include="perfectHash\bitbool.h" />
+    <ClInclude Include="perfectHash\bmz.h" />
+    <ClInclude Include="perfectHash\bmz8.h" />
+    <ClInclude Include="perfectHash\bmz8_structs.h" />
+    <ClInclude Include="perfectHash\bmz_structs.h" />
+    <ClInclude Include="perfectHash\brz.h" />
+    <ClInclude Include="perfectHash\brz_structs.h" />
+    <ClInclude Include="perfectHash\buffer_entry.h" />
+    <ClInclude Include="perfectHash\buffer_manager.h" />
+    <ClInclude Include="perfectHash\chd.h" />
+    <ClInclude Include="perfectHash\chd_ph.h" />
+    <ClInclude Include="perfectHash\chd_structs.h" />
+    <ClInclude Include="perfectHash\chd_structs_ph.h" />
+    <ClInclude Include="perfectHash\chm.h" />
+    <ClInclude Include="perfectHash\chm_structs.h" />
+    <ClInclude Include="perfectHash\cmph.h" />
+    <ClInclude Include="perfectHash\cmph_structs.h" />
+    <ClInclude Include="perfectHash\cmph_time.h" />
+    <ClInclude Include="perfectHash\cmph_types.h" />
+    <ClInclude Include="perfectHash\compressed_rank.h" />
+    <ClInclude Include="perfectHash\compressed_seq.h" />
+    <ClInclude Include="perfectHash\debug.h" />
+    <ClInclude Include="perfectHash\fch.h" />
+    <ClInclude Include="perfectHash\fch_buckets.h" />
+    <ClInclude Include="perfectHash\fch_structs.h" />
+    <ClInclude Include="perfectHash\graph.h" />
+    <ClInclude Include="perfectHash\hash.h" />
+    <ClInclude Include="perfectHash\hash_state.h" />
+    <ClInclude Include="perfectHash\jenkins_hash.h" />
+    <ClInclude Include="perfectHash\miller_rabin.h" />
+    <ClInclude Include="perfectHash\select.h" />
+    <ClInclude Include="perfectHash\select_lookup_tables.h" />
+    <ClInclude Include="perfectHash\stdafx.h" />
+    <ClInclude Include="perfectHash\targetver.h" />
+    <ClInclude Include="perfectHash\vqueue.h" />
+    <ClInclude Include="perfectHash\vstack.h" />
+    <ClInclude Include="range_code.h" />
+    <ClInclude Include="ssl_client.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VCFFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
